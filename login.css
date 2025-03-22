@@ -1,12 +1,16 @@
 *{
     margin-top: 0px;
 }
+
 /*||Variables||*/
 :root{
     --FTCOLOR:whitesmoke;
     --HVCOLOR:cadetblue;
     --PRCOLOR:rgb(109, 64, 192);
 }
+
+/*||Styles||*/
+
 body{
     
     background-image: url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -33,27 +37,29 @@ body{
 
 .nav-bar{
     max-width: 500px;
-   margin-top: 10px;
-   margin-right: 170px;
+    margin-top: 10px;
+    margin-right: 170px;
     justify-content: center;
  }
+
 .nav-link{
- 
     font-size: 20px;
     display: flex;
     gap: 70px;
     justify-content: center;
     list-style: none;
 }
+
 .nav-link a{
     text-decoration: none;
 }
+
 .nav-link a:hover{
     cursor: default;
     color: var(--HVCOLOR);
 }
+
 .btn{
-    /* margin-right:30px; */
     max-height: 40px;
     background-color: transparent;
     color: var(--FTCOLOR);
@@ -62,9 +68,11 @@ body{
     border: 1px solid var(--FTCOLOR);
     border-radius: 5px;
 }
+
 .btn:hover{
     color:var(--HVCOLOR);
 }
+
 .main{
     margin-left: 37%;
     margin-top: 7%;
@@ -80,19 +88,23 @@ body{
     border-radius: 10px;
     padding: 20px 5px ;
 }
+
 .top-content{
     display: flex;
 }
+
 main h1{
     display: inline-block;
     text-align: center;
     width: 400px;
     font-weight: 1000;
 }
+
 .material-symbols-outlined:hover{
   cursor: pointer;
   color:var(--HVCOLOR);
 }
+
 .email{
     padding: 5px 10px;
     font-size: 18px;
@@ -123,15 +135,168 @@ main h1{
     border-radius: 10px;
     font-size: 20px;
 }
+
 .btn-2:hover{
     color: var(--HVCOLOR);
 }
+
 .purple{
     color:var(--PRCOLOR);
 }
+
 .purple:hover{
     cursor: pointer;
     text-decoration:underline;
 }
 
 /*||MEDIA QUERIES||*/
+@media (max-width: 578px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+    }
+
+    .header {
+        flex-direction: column; 
+        gap: 1em; 
+        text-align: center;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .nav-bar {
+        margin: auto; 
+    }
+
+    .main {
+        margin:auto; 
+        width: 90%; 
+        padding: 15px; 
+    }
+    
+    .email,
+    .password {
+        width: 100%; 
+    }
+
+    .btn-2 {
+        width: 100%; 
+    }
+}
+@media (max-width: 768px) {
+    body {
+        
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+    }
+
+    .header {
+        flex-direction: column; 
+        gap: 1em;
+        text-align: center;
+    }
+
+    .nav-link {
+        flex-direction: column; 
+        gap: 1em;
+    }
+
+    .nav-bar {
+        margin: auto; 
+    }
+
+    .main {
+        margin: auto; 
+        width: 90%; 
+        padding: 15px; 
+    }
+
+    .email,
+    .password {
+        width: 100%; 
+    }
+
+    .btn-2 {
+        width: 100%; 
+    }
+}
+@media (max-width: 992px) {
+    body {
+       
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+    }
+
+    .header {
+        flex-direction: column; 
+        gap: 1em;
+        text-align: center;
+    }
+
+    .nav-link {
+        flex-direction: column; 
+        gap: 1em;
+    }
+
+    .nav-bar {
+        margin:  auto; 
+    }
+
+    .main {
+        margin: auto; 
+        width: 90%; 
+        padding: 15px; 
+    }
+    
+    .email,
+    .password {
+        width: 100%; 
+    }
+
+    .btn-2 {
+        width: 100%; 
+    }
+}
+@media (max-width: 1200px) {
+    body {
+        
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+    }
+
+    .header {
+        flex-direction: column; 
+        gap: 1em;
+        text-align: center;
+    }
+
+    .nav-link {
+        flex-direction: column; 
+        gap: 1em;
+    }
+
+    .nav-bar {
+        margin:  auto;
+    }
+
+    .main {
+        margin:auto; 
+        width: 90%; 
+        padding: 15px; 
+    }
+    .email,
+    .password {
+        width: 100%; 
+    }
+
+    .btn-2 {
+        width: 100%; 
+    }
+}
