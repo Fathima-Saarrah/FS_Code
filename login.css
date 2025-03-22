@@ -1,0 +1,137 @@
+*{
+    margin-top: 0px;
+}
+/*||Variables||*/
+:root{
+    --FTCOLOR:whitesmoke;
+    --HVCOLOR:cadetblue;
+    --PRCOLOR:rgb(109, 64, 192);
+}
+body{
+    
+    background-image: url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.header{ 
+    width: 100%;
+    margin-top: 20px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:var(--FTCOLOR);
+    display: flex;
+    justify-content: space-around;
+    gap: 20em;
+}
+
+.nav-bar{
+    max-width: 500px;
+   margin-top: 10px;
+   margin-right: 170px;
+    justify-content: center;
+ }
+.nav-link{
+ 
+    font-size: 20px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    list-style: none;
+}
+.nav-link a{
+    text-decoration: none;
+}
+.nav-link a:hover{
+    cursor: default;
+    color: var(--HVCOLOR);
+}
+.btn{
+    /* margin-right:30px; */
+    max-height: 40px;
+    background-color: transparent;
+    color: var(--FTCOLOR);
+    font-size: 20px;
+    padding: 0px 30px;
+    border: 1px solid var(--FTCOLOR);
+    border-radius: 5px;
+}
+.btn:hover{
+    color:var(--HVCOLOR);
+}
+.main{
+    margin-left: 37%;
+    margin-top: 7%;
+    gap: 1.5rem;
+    max-width: 460px;
+    max-height: 1000em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px 5px ;
+}
+.top-content{
+    display: flex;
+}
+main h1{
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    font-weight: 1000;
+}
+.material-symbols-outlined:hover{
+  cursor: pointer;
+  color:var(--HVCOLOR);
+}
+.email{
+    padding: 5px 10px;
+    font-size: 18px;
+    width: 400px;
+    height: 35px;
+}
+
+.password{
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 400px;
+    height: 35px;
+}
+
+.option{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-2{
+    width: 90%;
+    height: 50px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    background-color: var(--PRCOLOR);
+    color: var(--FTCOLOR);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.btn-2:hover{
+    color: var(--HVCOLOR);
+}
+.purple{
+    color:var(--PRCOLOR);
+}
+.purple:hover{
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+/*||MEDIA QUERIES||*/
